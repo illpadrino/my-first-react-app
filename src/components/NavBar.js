@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+// import { Link, Outlet } from "react-router-dom";
 
-import { NavBarContainer, MenuContainer, Link, Enlace, Apple, Bag, MenuIcon, } from './StyleNavBar';
+import { NavBarContainer, MenuContainer, Li, Enlace, Apple, Bag, MenuIcon, StyleLink, } from './StyleNavBar';
 
 import {ImAppleinc} from 'react-icons/im';
 
@@ -28,15 +29,15 @@ function NavBar() {
             <Apple><ImAppleinc/></Apple>
 
             <MenuContainer show = {toggle} >
-                <Link><Enlace>¡phone</Enlace></Link>
-                <Link><Enlace>¡pad</Enlace></Link>
-                <Link><Enlace>mackbook</Enlace></Link>
-                <Link><Enlace>watch</Enlace></Link>
-                <Link><Enlace>accesorios</Enlace></Link>
-                <Link><Enlace>servicio técnico</Enlace></Link>
+                <StyleLink to = "/Iphone">Iphone</StyleLink>     
+                <StyleLink to = "/Ipad">Ipad</StyleLink>
+                <StyleLink to = "/Mackbook">Mackbook</StyleLink>
+                <StyleLink to = "/Watch">Watch</StyleLink>
+                <StyleLink to = "/Accesorios">Accesorios</StyleLink>
+                <StyleLink to = "/ServicioTecnico">Servicio Técnico</StyleLink>
             </MenuContainer>
 
-            <Bag><BiShoppingBag/></Bag>
+            <Bag><BiShoppingBag/><span></span></Bag>
 
         </NavBarContainer>    
   );

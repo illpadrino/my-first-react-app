@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -25,17 +26,17 @@ export const MenuContainer = styled.ul`
     }
 `
 
-export const Link = styled.li`
-    list-style: none;
-    padding: 0 40px;
+// export const Li = styled.li`
+//     list-style: none;
+//     padding: 0 40px;
 
-    @media(max-width: 768px){
-        padding: 30px;
-    }
-`
+//     @media(max-width: 768px){
+//         padding: 30px;
+//     }
+// `
 export const Enlace = styled.a`
     text-transform: capitalize;
-    text-decotation: none;
+    text-decoration: none;
     color: white;
     font-family: verdana;
     cursor: pointer;
@@ -68,4 +69,23 @@ export const MenuIcon = styled.div`
         display: flex;
         cursor: pointer;
     }
+`
+
+export const StyleLink = styled(Link)`
+
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-family: verdana;
+    cursor: pointer;
+    padding: 0 40px;
+
+    &:hover{
+        color: #D8D8D8;
+}
+
+@media (max-width: 768px){
+    padding: 40px;
+}
+
 `
