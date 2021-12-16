@@ -31,13 +31,13 @@ function NavBar() {
             <MenuContainer show = {toggle} >
                 <StyleLink to = "/Iphone">Iphone</StyleLink>     
                 <StyleLink to = "/Ipad">Ipad</StyleLink>
-                <StyleLink to = "/Mackbook">Mackbook</StyleLink>
+                <StyleLink to = "/Mackbook">Macbook</StyleLink>
                 <StyleLink to = "/Watch">Watch</StyleLink>
                 <StyleLink to = "/Accesorios">Accesorios</StyleLink>
                 <StyleLink to = "/ServicioTecnico">Servicio Técnico</StyleLink>
             </MenuContainer>
-
-            <Bag><BiShoppingBag/><span></span></Bag>
+            
+            <StyleLink to = "/Cart"><Bag><BiShoppingBag/></Bag></StyleLink>        
 
         </NavBarContainer>    
   );

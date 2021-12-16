@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 import Iphone13 from '../Img/Iphone13.png'
-import {ContenedorProducto, Img, NombreProducto, ContenedorBtn, BtnMas, BtnMenos, Cantidad} from '../Pages/StyleIphone';
+import {ContenedorProducto, Img, NombreProducto, ContenedorBtn, BtnMas, BtnMenos, Cantidad} from './StyleCard';
 
-const Iphone = (props) =>{
+const Iphone = () =>{
     
     const [contador, setContador] = useState(1);
     

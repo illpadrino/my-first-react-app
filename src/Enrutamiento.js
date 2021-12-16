@@ -5,6 +5,7 @@ import Mackbook from './components/Pages/Mackbook'
 import Watch from "./components/Pages/Watch";
 import Accesorios from './components/Pages/Accesorios'
 import ServicioTecnico from './components/Pages/ServicioTecnico'
+import Cart from "./components/Pages/Cart";
 import NavBar from "./components/NavBar";
 
 
@@ -23,6 +24,7 @@ const Enrutamiento = () =>{
                 <Route exact path = "/Watch" element = {<Watch/>}/>
                 <Route exact path = "/Accesorios" element = {<Accesorios/>}/>
                 <Route exact path = "/ServicioTecnico" element = {<ServicioTecnico/>}/>
+                <Route exact path = "/Cart" element = {<Cart/>}/>
             </Routes>
 
     </BrowserRouter>      

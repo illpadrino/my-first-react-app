@@ -1,6 +1,10 @@
+import servicioTecnico1 from '../Img/servicioTecnico1.png'
+
 const ServicioTecnico = () =>{
     return(
-        <h3>Servicio Técnico</h3>
+        <div>
+            <img src = {servicioTecnico1}/>
+        </div>
     )
 }
 
