@@ -4,15 +4,17 @@ import Iphone13 from '../Img/Iphone13.png'
 import {ContenedorProducto, Img, NombreProducto, ContenedorBtn, BtnMas, BtnMenos, Cantidad} from './StyleCard';
 
 const Iphone = () =>{
+
+    const stock = 5;
     
     const [contador, setContador] = useState(1);
     
     const aumentar = () =>{
-        setContador(contador +1)
+        setContador(contador < stock ? contador + 1 : stock )
     }
 
     const disminuir = () =>{
-        setContador(contador -1)
+        setContador(contador > 1 ? contador -1 : contador )
     }
 
     return(

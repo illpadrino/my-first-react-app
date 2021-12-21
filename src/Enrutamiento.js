@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./components/Pages/Inicio";
 import Ipad from "./components/Pages/Iphone";
 import Iphone from "./components/Pages/Ipad";
 import Mackbook from './components/Pages/Mackbook'
@@ -18,6 +19,7 @@ const Enrutamiento = () =>{
         <NavBar/>
 
             <Routes>
+                <Route exact path = "/Inicio" element = {<Inicio/>}/> 
                 <Route exact path = "/Ipad" element = {<Iphone/>}/>
                 <Route exact path = "/Iphone" element = {<Ipad/>}/>
                 <Route exact path = "/Mackbook" element = {<Mackbook/>}/>
