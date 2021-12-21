@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 // import { Link, Outlet } from "react-router-dom";
 
-import { NavBarContainer, MenuContainer, Li, Enlace, Apple, Bag, MenuIcon, StyleLink, } from './StyleNavBar';
+import { NavBarContainer, MenuContainer,  Apple, Bag, MenuIcon, StyleLink, } from './StyleNavBar';
 
 import {ImAppleinc} from 'react-icons/im';
 

@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+// import {useState, useEffect} from 'react';
 import Cart from "./Cart";
 import Productos from "./DB";
 
@@ -22,14 +22,16 @@ function Inicio () {
                     Productos.map(producto =>{
                         return(
                            
-                            <div style={{margin: '20px'}}>
+                            <div  key = {producto.id}  style={{margin: '20px'}}>
                     
                                 <div style={{width: "200px"}}>
                                     <img style={{maxHeight: "8rem"}} 
-                                    src= {producto.img}/>
+                                    src= {producto.img} alt = {producto.nombre} />
                                 </div>
+
                                 <h5> {producto.nombre}</h5>
                                 <div><span>{producto.precio}</span></div>
+                                
                                 <button onClick={agregar}>añadir producto</button>
                             </div>
                         )
