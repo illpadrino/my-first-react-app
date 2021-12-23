@@ -29,8 +29,8 @@ function NavBar() {
             <StyleLink to = "/Inicio"><Apple><ImAppleinc/></Apple></StyleLink>
 
             <MenuContainer show = {toggle} >
-                <StyleLink to = "/Iphone">Iphone</StyleLink>     
-                <StyleLink to = "/Ipad">Ipad</StyleLink>
+                <StyleLink to = "/Iphone">¡phone</StyleLink>     
+                <StyleLink to = "/Ipad">¡pad</StyleLink>
                 <StyleLink to = "/Mackbook">Macbook</StyleLink>
                 <StyleLink to = "/Watch">Watch</StyleLink>
                 <StyleLink to = "/Accesorios">Accesorios</StyleLink>

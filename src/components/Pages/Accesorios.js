@@ -1,6 +1,11 @@
+
 const Accesorios = () =>{
     return(
-        <h3>Accesorios</h3>
+
+        <div>
+            <h5>Accesorios</h5>
+        </div>
+            
     )
 }
 

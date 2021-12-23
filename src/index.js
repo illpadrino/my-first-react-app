@@ -5,9 +5,11 @@ import Enrutamiento from './Enrutamiento';
 
 
 
+
 ReactDOM.render(
   <React.StrictMode>
       <Enrutamiento/>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

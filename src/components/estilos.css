@@ -1,0 +1,48 @@
+
+.contenedorTarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin-top: 100px;
+}
+
+.contenedorTarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorImagen{
+    width: 330px;
+    text-align: center;
+}
+
+
+.contenedorImagen img{
+    max-width: 80%;
+    max-height: 15rem;
+}
+
+.titulo{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.precio{
+    padding: 10px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+p{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500px;
+    color: #3498db;
+}

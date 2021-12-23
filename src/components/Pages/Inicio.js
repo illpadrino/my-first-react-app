@@ -1,48 +1,69 @@
-// import {useState, useEffect} from 'react';
-import Cart from "./Cart";
+import {useState, useEffect} from 'react';
 import Productos from "./DB";
+import '../estilos.css'
 
 function Inicio () {
     
+    const URL = Productos;
 
-    const agregar = (e) =>{
-        let productoSeleccionado = e.target.parentElement;
-        console.log(productoSeleccionado);
-        <Cart seleccionado = {productoSeleccionado}/>
-     }
+    // const agregar = (e) =>{
+    //     let productoSeleccionado = e.target.parentElement;
+    //     console.log(productoSeleccionado);
+    //  }
 
+    const [producto, setProducto] = useState([])
+
+    const rederizar = () => {
+
+        const promesa = new Promise (( resolve, reject) => {
+
+            setTimeout(() =>{
+                if (URL !== null) {
+                    resolve(URL)
+                }else{
+                    reject('error')
+                }
+               
+            }, 2000)
+    })
+    promesa.then( respuesta => setProducto(respuesta)).catch( error => (error))
+
+    }
+
+    useEffect(() =>{
+        rederizar()
+    })
+    
 
    
-    return(
-        <div>
-         
-            <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-                {
-                    
-                    Productos.map(producto =>{
-                        return(
-                           
-                            <div  key = {producto.id}  style={{margin: '20px'}}>
-                    
-                                <div style={{width: "200px"}}>
-                                    <img style={{maxHeight: "8rem"}} 
-                                    src= {producto.img} alt = {producto.nombre} />
-                                </div>
+    return (
+        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+            {producto.map(producto =>
+               
+               <div key = {producto.id} className="contenedorTarjeta">
+                        <div className="contenedorImagen">
+                        <img src= {producto.img} alt={producto.nombre}/>
+                        </div> 
 
-                                <h5> {producto.nombre}</h5>
-                                <div><span>{producto.precio}</span></div>
-                                
-                                <button onClick={agregar}>añadir producto</button>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-         
-        </div>
-
+                    <div className='contenedorInfo'>
+                        <h5 className="titulo">{producto.nombre}</h5>
+                        <span className="precio">{producto.precio}</span>
+                        <p>Descripción</p>
+                        <button >agregar</button>
+                    </div>   
         
+                 </div>
+            )} 
+
+        </div>
     )
+
+          
 }
 
 export default Inicio;
+
+
+
+
+
