@@ -5,6 +5,7 @@ const Productos = [
         precio: '100',
         cantidad: '10',
         img:  "https://i.ibb.co/DCGK5TV/Iphone13.png",
+        detail: 'iphone',
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const Productos = [
         precio: '100',
         cantidad: '10',
         img:  "https://i.ibb.co/ckGKNPP/Ipad1.png",
+        detail: 'ipad',
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const Productos = [
         precio: '100',
         cantidad: '10',
         img:  "https://i.ibb.co/db0P7kZ/reloj1.png",
+        detail: 'watch',
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const Productos = [
         precio: '100',
         cantidad: '10',
         img:  "https://i.ibb.co/R7yWj67/macbookremovebg.png",
+        detail: 'mackbook',
     },
 ]
 

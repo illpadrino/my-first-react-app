@@ -19,7 +19,7 @@ const Enrutamiento = () =>{
         <NavBar/>
 
             <Routes>
-                <Route exact path = "/Inicio" element = {<Inicio/>}/> 
+                <Route path = "/" element = {<Inicio/>}/> 
                 <Route exact path = "/Ipad" element = {<Iphone/>}/>
                 <Route exact path = "/Iphone" element = {<Ipad/>}/>
                 <Route exact path = "/Mackbook" element = {<Mackbook/>}/>

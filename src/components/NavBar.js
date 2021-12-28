@@ -26,7 +26,7 @@ function NavBar() {
              {toggle ? <FaTimes/> : <GiHamburgerMenu/>}
             </MenuIcon>
 
-            <StyleLink to = "/Inicio"><Apple><ImAppleinc/></Apple></StyleLink>
+            <StyleLink to = "/"><Apple><ImAppleinc/></Apple></StyleLink>
 
             <MenuContainer show = {toggle} >
                 <StyleLink to = "/Iphone">¡phone</StyleLink>     

@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import Productos from "./DB";
-import '../estilos.css'
+import '../estilos.css';
+import {Link} from 'react-router-dom'
 
 function Inicio () {
     
@@ -49,7 +50,7 @@ function Inicio () {
                         <h5 className="titulo">{producto.nombre}</h5>
                         <span className="precio">{producto.precio}</span>
                         <p>Descripción</p>
-                        <button >agregar</button>
+                        <Link to ={producto.detail} >Ver Detalle</Link>
                     </div>   
         
                  </div>
